@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+#h{
+    padding: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+#intro,#objective,#project,#hobbies,#strength,#experience{
+    padding: 20px;
+    text-align: center;
+    background-color: aliceblue;
+   
+}
+#additional{
+    padding: 20px;
+    background-color: aliceblue;
+    margin-bottom: 100px;
+}
+p{
+    padding: 5px;
+}
+#skill{
+    padding: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    
+}
+#skill>ul>li{
+    list-style: none;
+}
+#hobbies>ul>li{
+    list-style: none;
+}
+#strength>ul>li{
+    list-style: none;
+}
+#experience>ul>li{
+    list-style: none;
+}

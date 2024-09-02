@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgb(43, 255, 114), rgb(255, 242, 54))
+}
+#portfolio{
+    display: flex;
+    margin: 30px;
+    height: 80vh;
+    
+}
+#content-section{
+    width: 60%;
+    
+    padding: 20px;
+}
+#name-section{
+    padding: 10px;
+}
+#phase{
+    padding: 10px;
+}
+#image-section{
+    width: 40%;
+    display: flex;
+}
+#image-section1{
+    width: 40%;
+    display: none;
+}
+#image{
+    width: 100%;
+    height:50%;
+    border-radius:55% ;
+}
+#name-section{
+    width: 100%;
+}
+
+@media screen and (max-width: 663px) {
+    #portfolio{
+        display: block;
+        height: 100vh;
+    }
+    #content-section{
+        width: 100%;
+    }
+    #image-section{
+        display: none;
+    }
+    #image-section1{
+        width: 40%;
+        display: flex;
+    }
+    
+  }
