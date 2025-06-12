@@ -1,59 +1,112 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(rgb(43, 255, 114), rgb(255, 242, 54))
-}
-#portfolio{
-    display: flex;
-    margin: 30px;
-    height: 80vh;
-    
-}
-#content-section{
-    width: 60%;
-    
-    padding: 20px;
-}
-#name-section{
-    padding: 10px;
-}
-#phase{
-    padding: 10px;
-}
-#image-section{
-    width: 40%;
-    display: flex;
-}
-#image-section1{
-    width: 40%;
-    display: none;
-}
-#image{
-    width: 100%;
-    height:50%;
-    border-radius:55% ;
-}
-#name-section{
-    width: 100%;
+
+body {
+    background-image: linear-gradient(rgb(43, 255, 114), rgb(255, 242, 54));
+    font-family: Arial, sans-serif;
 }
 
+/* Main portfolio layout */
+#portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    height: 80vh;
+}
+
+/* Content section */
+#content-section {
+    width: 60%;
+    padding: 20px;
+}
+
+#name-section,
+#phase {
+    padding: 10px;
+}
+
+#name-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#name-section h2 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+/* Image section */
+#image-section,
+#image-section1 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-section1 {
+    display: none; /* hidden on desktop */
+}
+
+#image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Contact icons */
+#contact-icons {
+    padding: 10px;
+}
+
+#contact-icons img {
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+#contact-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design */
 @media screen and (max-width: 663px) {
-    #portfolio{
+    #portfolio {
         display: block;
-        height: 100vh;
+        height: auto;
+        margin: 20px;
     }
-    #content-section{
+
+    #content-section {
         width: 100%;
+        padding: 15px;
     }
-    #image-section{
+
+    #image-section {
         display: none;
     }
-    #image-section1{
-        width: 40%;
+
+    #image-section1 {
         display: flex;
+        width: 100%;
+        margin-bottom: 20px;
     }
-    
-  }
+
+    #image {
+        max-height: 250px;
+    }
+
+    #name-section h1 {
+        font-size: 2rem;
+    }
+
+    #name-section h2 {
+        font-size: 1.2rem;
+    }
+}
