@@ -1,45 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
-#h{
+
+/* Section Headings */
+#h {
     padding: 20px;
     text-align: center;
     background-color: antiquewhite;
+    font-size: 2rem;
 }
-#intro,#objective,#project,#hobbies,#strength,#experience{
+
+/* Shared Section Styles */
+#intro, 
+#objective, 
+#project, 
+#hobbies, 
+#strength, 
+#experience, 
+#skill, 
+#additional {
     padding: 20px;
+    background-color: aliceblue;
     text-align: center;
-    background-color: aliceblue;
-   
+    margin-bottom: 20px;
 }
-#additional{
-    padding: 20px;
-    background-color: aliceblue;
+
+/* Additional spacing at bottom */
+#additional {
     margin-bottom: 100px;
 }
-p{
+
+/* Paragraph styling */
+p {
     padding: 5px;
+    font-size: 1rem;
+    color: #333;
 }
-#skill{
-    padding: 20px;
-    background-color: aliceblue;
-    text-align: center;
-    
-}
-#skill>ul>li{
+
+/* List styles */
+#skill ul,
+#hobbies ul,
+#strength ul,
+#experience ul {
     list-style: none;
+    padding: 0;
 }
-#hobbies>ul>li{
-    list-style: none;
-}
-#strength>ul>li{
-    list-style: none;
-}
-#experience>ul>li{
-    list-style: none;
+
+#skill ul li,
+#hobbies ul li,
+#strength ul li,
+#experience ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+    color: #444;
 }
